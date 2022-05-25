@@ -2,6 +2,7 @@ python-script-background-music
 ===
 [![CircleCI](https://circleci.com/gh/timo-reymann/python-script-background-music.svg?style=shield)](https://app.circleci.com/pipelines/github/timo-reymann/python-script-background-music)
 [![GitHub Release](https://img.shields.io/github/v/tag/timo-reymann/python-script-background-music.svg?label=version)](https://github.com/timo-reymann/python-script-background-music/releases)
+[![PyPI version](https://badge.fury.io/py/script-background-music.svg)](https://pypi.org/project/script-background-music)
 [![pre-commit](https://img.shields.io/badge/%E2%9A%93%20%20pre--commit-enabled-success)](https://pre-commit.com/)
 
 <p align="center">
