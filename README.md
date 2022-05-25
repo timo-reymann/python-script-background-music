@@ -36,5 +36,7 @@ If you encounter the opposite feel free to create a bug report.
 
 ## Credits
 
-Special thanks to [@TaylorSMarks](https://github.com/TaylorSMarks/) for
-creating [playsound](https://github.com/TaylorSMarks/playsound) that I modified and ship with this package.
+- Special thanks to [@TaylorSMarks](https://github.com/TaylorSMarks/) for
+  creating [playsound](https://github.com/TaylorSMarks/playsound) that I modified and ship with this package.
+- [Clker-Free-Vector-Images](https://pixabay.com/users/clker-free-vector-images-3736/) for the
+  wonderful [elevator image](https://pixabay.com/vectors/elevator-people-silhouette-down-44013/) used as project image
