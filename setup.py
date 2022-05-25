@@ -1,0 +1,18 @@
+from setuptools import setup, find_packages
+from os import environ
+
+with open("README.md", "r") as readme_file:
+    readme = "".join(readme_file.readlines())
+
+setup(
+    name='script-background-music',
+    version=environ.get("VERSION", "snapshot"),
+    author="Timo Reymann <mail@timo-reymann.de>",
+    url="https://github.com/timo-reymann/python-script-background-music",
+    include_package_data=True,
+    packages=find_packages(),
+    requires=[],
+    python_requires='>3.8.0',
+    long_description=readme,
+    long_description_content_type='text/markdown'
+)

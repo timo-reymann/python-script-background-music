@@ -1,0 +1,65 @@
+version: 2.1
+
+orbs:
+  semantic-release: trustedshops-public/semantic-release@2.0.0
+
+executors:
+  python:
+    docker:
+      - image: cimg/python:3.10.0
+
+jobs:
+  pip-publish:
+    executor: python
+    parameters:
+      repository:
+        type: string
+        description: Name of the repository to publish to
+    steps:
+      - checkout
+      - run:
+          name: Set version
+          command: |
+            if [ ! -z "$CIRCLE_TAG" ]
+            then
+              echo "Building for tag"
+              version="${CIRCLE_TAG}"
+            else
+              echo "Building for snapshot"
+              last_tag=$(git describe --tags `git rev-list --tags --max-count=1`)
+              version="${last_tag}.dev${CIRCLE_BUILD_NUM}"
+            fi
+            echo "export VERSION=${version}" >> $BASH_ENV
+      - run:
+          name: Install dependencies
+          command: |
+            pip3 install -r requirements-dev.txt
+      - run:
+          name: Build package
+          command: |
+            python3 setup.py sdist bdist_wheel
+      - run:
+          name: Upload package
+          command: |
+            twine upload --repository <<parameters.repository>> dist/*
+
+workflows:
+  version: 2
+  continuous:
+    jobs:
+      - pip-publish:
+          name: pip-publish-pypi
+          repository: pypi
+          filters:
+            branches:
+              ignore: /.*/
+            tags:
+              only: /.*/
+      - semantic-release/with-changelog-github-config:
+          name: semantic-release
+          filters:
+            branches:
+              only:
+                - main
+          context:
+            - semantic-release
