@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from elevator_music import play_music_in_background
+from script_background_music import play_music_in_background
 
 
 def main():

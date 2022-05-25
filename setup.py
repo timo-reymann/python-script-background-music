@@ -13,6 +13,7 @@ setup(
     packages=find_packages(),
     requires=[],
     python_requires='>3.8.0',
+    description="Play elevator music in the background while your script runs.",
     long_description=readme,
     long_description_content_type='text/markdown'
 )

@@ -1,8 +1,8 @@
 import logging
 from threading import Thread
 
-from elevator_music.songs import get_random_song
-from elevator_music.vendor.playsound import get_play_sound
+from script_background_music.songs import get_random_song
+from script_background_music.vendor.playsound import get_play_sound
 
 
 def __music(song_title):

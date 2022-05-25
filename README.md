@@ -22,7 +22,7 @@ script-background-music
 It is very simple to use the package inside your scripts:
 
 ```python
-from elevator_music import play_music_in_background
+from script_background_music import play_music_in_background
 
 play_music_in_background()
 ```
