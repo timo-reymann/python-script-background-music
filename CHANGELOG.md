@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/timo-reymann/python-script-background-music/compare/1.1.0...1.1.1) (2022-07-11)
+
+
+### Bug Fixes
+
+* Add mp3 files to sdist ([193b823](https://github.com/timo-reymann/python-script-background-music/commit/193b8230c27766b8e77bc43786c0f24209161a6b))
+
 # [1.1.0](https://github.com/timo-reymann/python-script-background-music/compare/1.0.0...1.1.0) (2022-05-25)
 
 
