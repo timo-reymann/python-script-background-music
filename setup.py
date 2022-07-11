@@ -2,7 +2,11 @@ from setuptools import setup, find_packages
 from os import environ
 
 with open("README.md", "r") as readme_file:
-    readme = "".join(readme_file.readlines())
+    readme = "".join(readme_file.readlines()) \
+        .replace(
+        ".github/images/elevator.png",
+        "https://raw.githubusercontent.com/timo-reymann/python-script-background-music/main/.github/images/elevator.png"
+    )
 
 setup(
     name='script-background-music',
