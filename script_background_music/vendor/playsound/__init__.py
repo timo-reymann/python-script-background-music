@@ -1,5 +1,31 @@
+# This file has been taken over from https://pypi.org/project/playsound/ and modified
+
+"""
+The MIT License (MIT)
+
+Copyright (c) 2021 Taylor Marks <taylor@marksfam.com>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+"""
 import logging
 from platform import system
+import subprocess
 
 logger = logging.getLogger(__name__)
 
@@ -91,68 +117,14 @@ def __playsound_win(sound, block=True):
             pass
 
 
-def __handle_path_osx(sound):
-    sound = __canonicalize_path(sound)
-
-    if '://' not in sound:
-        if not sound.startswith('/'):
-            from os import getcwd
-            sound = getcwd() + '/' + sound
-        sound = 'file://' + sound
-
-    try:
-        # Don't double-encode it.
-        sound.encode('ascii')
-        return sound.replace(' ', '%20')
-    except UnicodeEncodeError:
-        try:
-            from urllib.parse import quote  # Try the Python 3 import first...
-        except ImportError:
-            from urllib import quote  # Try using the Python 2 import before giving up entirely...
-
-        parts = sound.split('://', 1)
-        return parts[0] + '://' + quote(parts[1].encode('utf-8')).replace(' ', '%20')
-
-
 def __playsound_osx(sound, block=True):
-    '''
-    Utilizes AppKit.NSSound. Tested and known to work with MP3 and WAVE on
-    OS X 10.11 with Python 2.7. Probably works with anything QuickTime supports.
-    Probably works on OS X 10.5 and newer. Probably works with all versions of
-    Python.
-
-    Inspired by (but not copied from) Aaron's Stack Overflow answer here:
-    http://stackoverflow.com/a/34568298/901641
-
-    I never would have tried using AppKit.NSSound without seeing his code.
-    '''
-    try:
-        from AppKit import NSSound
-    except ImportError:
-        logger.debug("playsound could not find a copy of AppKit - falling back to using macOS's system copy.")
-        sys.path.append('/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/PyObjC')
-        from AppKit import NSSound
-
-    from Foundation import NSURL
-    from time import sleep
-
-    sound = __handle_path_osx(sound)
-    url = NSURL.URLWithString_(sound)
-    if not url:
-        raise PlaysoundException('Cannot find a sound with filename: ' + sound)
-
-    for i in range(5):
-        nssound = NSSound.alloc().initWithContentsOfURL_byReference_(url, True)
-        if nssound:
-            break
-        else:
-            logger.debug('Failed to load sound, although url was good... ' + sound)
-    else:
-        raise PlaysoundException('Could not load sound with filename, although URL was good... ' + sound)
-    nssound.play()
-
-    if block:
-        sleep(nssound.duration())
+    exit_code = subprocess.call(
+        ["afplay", sound],
+        stdout=subprocess.DEVNULL,
+        stderr=subprocess.STDOUT
+    )
+    if exit_code != 0:
+        raise Exception(f"Exited with status {exit_code}")
 
 
 def __playsound_nix(sound, block=True):
