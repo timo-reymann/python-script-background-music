@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/timo-reymann/python-script-background-music/compare/1.2.0...1.2.1) (2022-07-11)
+
+
+### Bug Fixes
+
+* Fix image in pypi README ([e5a1f4d](https://github.com/timo-reymann/python-script-background-music/commit/e5a1f4d2304c60badcbe2250e04ae1c0afb89228))
+
 # [1.2.0](https://github.com/timo-reymann/python-script-background-music/compare/1.1.1...1.2.0) (2022-07-11)
 
 
