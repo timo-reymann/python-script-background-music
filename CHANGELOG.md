@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/timo-reymann/python-script-background-music/compare/1.1.1...1.2.0) (2022-07-11)
+
+
+### Features
+
+* Simplify MacOS background music and make sure it works with newer systems ([aa3b845](https://github.com/timo-reymann/python-script-background-music/commit/aa3b8451bdc3cdfacf3569765a963acf2fe4ba7c))
+
 ## [1.1.1](https://github.com/timo-reymann/python-script-background-music/compare/1.1.0...1.1.1) (2022-07-11)
 
 
