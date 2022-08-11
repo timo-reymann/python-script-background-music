@@ -3,7 +3,8 @@ from pathlib import Path
 
 SONGS = [
     "local-forecast",
-    "lofi"
+    "lofi",
+    "overcast"
 ]
 
 
