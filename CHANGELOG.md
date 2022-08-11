@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/timo-reymann/python-script-background-music/compare/1.3.0...1.3.1) (2022-08-11)
+
+
+### Bug Fixes
+
+* Adjust stability status for context ([aa12589](https://github.com/timo-reymann/python-script-background-music/commit/aa125893294ffb21c5f5df63be4652d9d74019d7))
+
 # [1.3.0](https://github.com/timo-reymann/python-script-background-music/compare/1.2.1...1.3.0) (2022-08-11)
 
 
