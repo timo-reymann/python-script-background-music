@@ -7,7 +7,7 @@ class BackgroundMusicContext(object):
     """
     Run background music in a given context
 
-    <b>WARNING: Only verified to work on macOS! Should work on Linux and Windows as well since they also create a subprocess under the hood.</b>
+    <b>WARNING: Not verified to work on macOS! Should work there as well, since also creates a subprocess under the hood.</b>
     """
     __thread: PlayThread = None
 
