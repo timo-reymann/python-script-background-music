@@ -19,12 +19,24 @@ script-background-music
 
 ## Usage
 
-It is very simple to use the package inside your scripts:
+It is very simple to use the package inside your scripts ...
+
+### ... the entire time, until your script exits
 
 ```python
 from script_background_music import play_music_in_background
 
 play_music_in_background()
+```
+
+### ... for a specific set of instructions
+
+```python
+from script_background_music import BackgroundMusicContext
+
+with BackgroundMusicContext():
+    # your instructions go here
+    pass
 ```
 
 ## Notes on implementation

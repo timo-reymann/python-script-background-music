@@ -24,9 +24,10 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 import logging
+import os
+import sys
 from platform import system
 import subprocess
-
 logger = logging.getLogger(__name__)
 
 
@@ -118,13 +119,8 @@ def __playsound_win(sound, block=True):
 
 
 def __playsound_osx(sound, block=True):
-    exit_code = subprocess.call(
-        ["afplay", sound],
-        stdout=subprocess.DEVNULL,
-        stderr=subprocess.STDOUT
-    )
-    if exit_code != 0:
-        raise Exception(f"Exited with status {exit_code}")
+    p = subprocess.Popen(["afplay", sound], stdout=sys.stdout, stderr=sys.stderr)
+    p.wait()
 
 
 def __playsound_nix(sound, block=True):
