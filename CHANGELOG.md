@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/timo-reymann/python-script-background-music/compare/1.2.1...1.3.0) (2022-08-11)
+
+
+### Features
+
+* **#1:** Add context manager for playing background music ([d5dd9a9](https://github.com/timo-reymann/python-script-background-music/commit/d5dd9a97b98182423af9751b352fd6bb3d077b25)), closes [#1](https://github.com/timo-reymann/python-script-background-music/issues/1)
+
 ## [1.2.1](https://github.com/timo-reymann/python-script-background-music/compare/1.2.0...1.2.1) (2022-07-11)
 
 
