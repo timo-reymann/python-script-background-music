@@ -1,4 +1,4 @@
-from typing import Callable
+from typing import Callable, Union
 
 from script_background_music.play import play_random_music_in_background, PlayThread
 
@@ -9,7 +9,7 @@ class BackgroundMusicContext(object):
 
     <b>WARNING: Not verified to work on macOS! Should work there as well, since also creates a subprocess under the hood.</b>
     """
-    __thread: PlayThread = None
+    __thread: Union[PlayThread, None] = None
 
     def __init__(self, player_callback: Callable[[], PlayThread] = play_random_music_in_background):
         """

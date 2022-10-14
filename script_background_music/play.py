@@ -29,7 +29,6 @@ def play_music_in_background(song_file: Union[str, None] = None) -> PlayThread:
     """
     song_to_play = get_random_song() if song_file is None else song_file
     thread = PlayThread(target=__music, args=(song_to_play,))
-    # thread.daemon = True
     thread.start()
     return thread
 
