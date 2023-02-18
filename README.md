@@ -1,5 +1,6 @@
 script-background-music
 ===
+[![LICENSE](https://img.shields.io/github/license/timo-reymann/python-script-background-music)](https://github.com/timo-reymann/python-script-background-music/blob/main/LICENSE)
 [![CircleCI](https://circleci.com/gh/timo-reymann/python-script-background-music.svg?style=shield)](https://app.circleci.com/pipelines/github/timo-reymann/python-script-background-music)
 [![GitHub Release](https://img.shields.io/github/v/tag/timo-reymann/python-script-background-music.svg?label=version)](https://github.com/timo-reymann/python-script-background-music/releases)
 [![PyPI version](https://badge.fury.io/py/script-background-music.svg)](https://pypi.org/project/script-background-music)
@@ -9,17 +10,22 @@ script-background-music
 [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=timo-reymann_python-script-background-music&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=timo-reymann_python-script-background-music)
 
 <p align="center">
-  <img width="300" src=".github/images/elevator.png">
+    <img width="300" src=".github/images/elevator.png">
+    <br />
+    <b>script-background-music</b> - Play elevator music in the background while your script runs.
 </p>
 
-<p align="center">
-  <b>script-background-music</b> - Play elevator music in the background while your script runs.
-</p>
+## Features
+- Play music in the background *surprised pickachu face*
+- If playback fails is silently ignored
 
-## Why?
+## Requirements
+- [Python 3](https://www.python.org/)
 
-> **Everything** is better with music!
-
+## Installation
+```sh
+pip install script-background-music
+```
 ## Usage
 
 It is very simple to use the package inside your scripts ...
@@ -42,12 +48,38 @@ with BackgroundMusicContext():
     pass
 ```
 
-## Notes on implementation
+## Motivation
+
+> **Everything** is better with music!
+
+## Documentation
 
 ### Can it break my script?
 
 No, it should not at least. If something goes wrong playing music etc. it simply wont play music.
 If you encounter the opposite feel free to create a bug report.
+
+## Contributing
+I love your input! I want to make contributing to this project as easy and transparent as possible, whether it's:
+
+- Reporting a bug
+- Discussing the current state of the configuration
+- Submitting a fix
+- Proposing new features
+- Becoming a maintainer
+
+To get started please read the [Contribution Guidelines](./CONTRIBUTING.md).
+
+## Development
+
+### Requirements
+- [Python 3](https://python.org)
+- [pre-commit](https://pre-commit.com/)
+
+### Build
+```
+python3 setup.py sdist bdist_wheel
+```
 
 ## Credits
 
