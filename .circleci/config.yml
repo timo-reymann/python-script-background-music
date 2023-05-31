@@ -55,7 +55,7 @@ workflows:
               ignore: /.*/
             tags:
               only: /.*/
-      - semantic-release/with-changelog-github-config:
+      - semantic-release/with_changelog_github_config:
           name: semantic-release
           filters:
             branches:
