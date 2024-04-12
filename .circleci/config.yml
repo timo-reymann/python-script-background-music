@@ -6,7 +6,7 @@ orbs:
 executors:
   python:
     docker:
-      - image: cimg/python:3.12.2
+      - image: cimg/python:3.12.3
 
 jobs:
   pip-publish:
