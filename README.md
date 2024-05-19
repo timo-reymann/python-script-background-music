@@ -16,16 +16,21 @@ script-background-music
 </p>
 
 ## Features
+
 - Play music in the background *surprised pickachu face*
 - If playback fails is silently ignored
 
+
 ## Requirements
+
 - [Python 3](https://www.python.org/)
 
 ## Installation
+
 ```sh
 pip install script-background-music
 ```
+
 ## Usage
 
 It is very simple to use the package inside your scripts ...
@@ -48,6 +53,9 @@ with BackgroundMusicContext():
     pass
 ```
 
+
+### [API docs](https://timo-reymann.github.io//python-script-background-music)
+
 ## Motivation
 
 > **Everything** is better with music!
@@ -60,6 +68,7 @@ No, it should not at least. If something goes wrong playing music etc. it simply
 If you encounter the opposite feel free to create a bug report.
 
 ## Contributing
+
 I love your input! I want to make contributing to this project as easy and transparent as possible, whether it's:
 
 - Reporting a bug
@@ -73,10 +82,12 @@ To get started please read the [Contribution Guidelines](./CONTRIBUTING.md).
 ## Development
 
 ### Requirements
+
 - [Python 3](https://python.org)
 - [pre-commit](https://pre-commit.com/)
 
 ### Build
+
 ```
 python3 setup.py sdist bdist_wheel
 ```
