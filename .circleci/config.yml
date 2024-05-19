@@ -8,9 +8,9 @@ executors:
   python:
     docker:
       - image: cimg/python:3.12.3
-    node:
-      docker:
-        - image: cimg/python:3.12-node
+  node:
+    docker:
+      - image: cimg/python:3.12-node
 
 jobs:
   pip-publish:
