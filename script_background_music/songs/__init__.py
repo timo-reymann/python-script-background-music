@@ -1,3 +1,6 @@
+"""
+Songs to play
+"""
 from random import choice
 from pathlib import Path
 
@@ -14,4 +17,7 @@ def __get_song(name: str) -> Path:
 
 
 def get_random_song() -> Path:
+    """
+    Pick random song from the selection
+    """
     return __get_song(choice(SONGS))
