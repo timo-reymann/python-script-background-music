@@ -1,3 +1,10 @@
+## [1.5.0](https://github.com/timo-reymann/python-script-background-music/compare/1.4.0...1.5.0) (2024-05-19)
+
+
+### Features
+
+* Add pydoc to entire API surface ([6e284fd](https://github.com/timo-reymann/python-script-background-music/commit/6e284fdf7fb8e09fbf6c213846c7d322ff0341cf))
+
 # [1.4.0](https://github.com/timo-reymann/python-script-background-music/compare/1.3.1...1.4.0) (2022-08-11)
 
 
