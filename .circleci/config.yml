@@ -2,11 +2,15 @@ version: 2.1
 
 orbs:
   semantic-release: trustedshops-public/semantic-release@6.0.0
+  github-utils: trustedshops-public/github-utils@1.1.2
 
 executors:
   python:
     docker:
       - image: cimg/python:3.12.3
+    node:
+      docker:
+        - image: cimg/python:3.12-node
 
 jobs:
   pip-publish:
@@ -42,11 +46,38 @@ jobs:
           name: Upload package
           command: |
             twine upload --repository <<parameters.repository>> dist/*
+    build-gh-pages:
+      executor: node
+      steps:
+        - checkout
+        - run:
+            name: Checkout pydoctor-theme submodule
+            command: |
+              git submodule sync
+              git submodule update --init --recursive
+        - run:
+            name: Install dependencies
+            command: |
+              pip3 install -r requirements-dev.txt
+        - run:
+            name: Build html documentation
+            command: |
+              poetry run pydoctor
+
+        - github-utils/publish_github_pages:
+            folder: gh-pages/
+            git_commit_author_email: "no-reply@timo-reymann.de"
+            git_commit_author_name: "CircleCI"
 
 workflows:
   version: 2
   continuous:
     jobs:
+      - build-gh-pages:
+          filters:
+            branches:
+              only:
+                - main
       - pip-publish:
           name: pip-publish-pypi
           repository: pypi
