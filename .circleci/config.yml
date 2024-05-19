@@ -62,8 +62,7 @@ jobs:
       - run:
           name: Build html documentation
           command: |
-            poetry run pydoctor
-
+            pydoctor
       - github-utils/publish_github_pages:
           folder: gh-pages/
           git_commit_author_email: "no-reply@timo-reymann.de"
