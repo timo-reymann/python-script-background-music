@@ -46,28 +46,28 @@ jobs:
           name: Upload package
           command: |
             twine upload --repository <<parameters.repository>> dist/*
-    build-gh-pages:
-      executor: node
-      steps:
-        - checkout
-        - run:
-            name: Checkout pydoctor-theme submodule
-            command: |
-              git submodule sync
-              git submodule update --init --recursive
-        - run:
-            name: Install dependencies
-            command: |
-              pip3 install -r requirements-dev.txt
-        - run:
-            name: Build html documentation
-            command: |
-              poetry run pydoctor
+  build-gh-pages:
+    executor: node
+    steps:
+      - checkout
+      - run:
+          name: Checkout pydoctor-theme submodule
+          command: |
+            git submodule sync
+            git submodule update --init --recursive
+      - run:
+          name: Install dependencies
+          command: |
+            pip3 install -r requirements-dev.txt
+      - run:
+          name: Build html documentation
+          command: |
+            poetry run pydoctor
 
-        - github-utils/publish_github_pages:
-            folder: gh-pages/
-            git_commit_author_email: "no-reply@timo-reymann.de"
-            git_commit_author_name: "CircleCI"
+      - github-utils/publish_github_pages:
+          folder: gh-pages/
+          git_commit_author_email: "no-reply@timo-reymann.de"
+          git_commit_author_name: "CircleCI"
 
 workflows:
   version: 2
