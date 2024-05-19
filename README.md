@@ -54,7 +54,7 @@ with BackgroundMusicContext():
 ```
 
 
-### [API docs](https://timo-reymann.github.io//python-script-background-music)
+### [API docs](https://timo-reymann.github.io/python-script-background-music)
 
 ## Motivation
 
