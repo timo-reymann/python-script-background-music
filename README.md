@@ -3,6 +3,12 @@ pydoctor-theme
 
 Pydoctor Theme I use with all my Python projects.
 
+## Features
+
+- Support dark theme (via prefers-color-scheme media query)
+- Add orange navbar
+- Refine layout spacing
+
 ## Usage with pydoctor
 
 1. Add this repo as submodule
