@@ -1,4 +1,0 @@
-setuptools==70.*
-twine==5.1.*
-wheel==0.43.*
-pydoctor==24.3.*

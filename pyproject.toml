@@ -1,0 +1,64 @@
+[project]
+name = "script-background-music"
+description = "Play elevator music in the background while your script runs."
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+    { name = "Timo Reymann", email = "mail@timo-reymann.de" }
+]
+dynamic = ["version"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+[project.urls]
+Homepage = "https://github.com/timo-reymann/python-script-background-music"
+
+[project.optional-dependencies]
+dev = [
+    "setuptools==70.*",
+    "setuptools-scm==8.*",
+    "twine==5.1.*",
+    "wheel==0.43.*",
+    "pydoctor==24.3.*",
+    "build==1.*"
+]
+
+[tool.setuptools_scm]
+
+[tool.pydoctor]
+verbose = 0
+warnings-as-errors = true
+
+intersphinx = ["https://docs.python.org/3/objects.inv"]
+docformat = "restructuredtext"
+html-output = "gh-pages"
+
+add-package = ["oauth2_cli_auth"]
+project-name = "oauth2_cli_auth"
+project-url = "https://github.com/timo-reymann/python-oauth2-cli-auth"
+privacy = [
+    "HIDDEN:oauth2_cli_auth.*_test",
+    "HIDDEN:oauth2_cli_auth.conftest"
+]
+
+theme = "base"
+template-dir = "pydoctor-theme"
+
+[build-system]
+requires = [
+    "setuptools",
+    "setuptools-scm",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"

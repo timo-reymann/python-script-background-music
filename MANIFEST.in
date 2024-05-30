@@ -1,1 +1,7 @@
 include script_background_music/songs/*.mp3
+prune */__pycache__
+prune *.yml
+prune *.json
+prune sonar-project.properties
+prune .github/
+prune .circleci/
