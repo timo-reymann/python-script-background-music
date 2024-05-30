@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>script_background_music.vendor.playsound</title>
+    <meta name="generator" content="pydoctor 24.3.3"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://github.com/timo-reymann/python-script-background-music" class="projecthome">script_background_music</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="search-help-button" title="Help" onclick="toggleSearchHelpText()"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="search-results-container" style="display: none;">
+        
+        <div id="search-buttons">
+          <span class="label label-default" id="search-docstrings-button">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+              search in docstrings
+            </input>
+          </label>
+          </span>
+          
+        </div>
+        
+        <noscript>
+            <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+        </noscript>
+
+        <div class="hint" id="search-help-box">
+          <p class="rst-last">
+      
+            Search bar offers the following options:
+            <ul>   
+                <li>
+                  <strong>Term presence.</strong> The below example searches for documents that 
+                    must contain “foo”, might contain “bar” and must not contain “baz”: <code>+foo bar -baz</code>
+                </li> 
+
+                <li>
+                  <strong>Wildcards.</strong> The below example searches for documents with words beginning with “foo”: <code>foo*</code>
+                </li> 
+
+                <li>
+                  <strong>Search in specific fields.</strong> The following search matches all objects 
+                  in "twisted.mail" that matches “search”: <code>+qname:twisted.mail.* +search</code>
+
+                  <p>
+                    Possible fields: 'name', 'qname' (fully qualified name), 'docstring', and 'kind'.
+                    Last two fields are only applicable if "search in docstrings" is enabled.
+                  </p>
+                </li>
+
+                <li>
+                  <strong>Fuzzy matches.</strong> The following search matches all documents 
+                  that have a word within 1 edit distance of “foo”: <code>foo~1</code>
+                </li>
+            </ul>
+
+          </p>
+        </div>
+
+        <div id="search-status"> </div>
+
+        <div class="warning" id="search-warn-box" style="display: none;">
+          <p class="rst-last"><span id="search-warn"></span></p>
+        </div>
+
+        <table id="search-results">
+          <!-- Filled dynamically by JS -->
+        </table>
+        
+        <div style="margin-top: 8px;">
+          <p>Results provided by <a href="https://lunrjs.com">Lunr.js</a></p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+</nav>
+    
+    <div class="container-fluid">
+
+      <!-- Side navigation -->
+      <div class="sidebarcontainer" style="display: none;">
+        
+        <div class="sidebar"><nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Package</span>
+        <code class="thisobject"><a href="script_background_music.vendor.playsound.html" class="internal-link" title="This package">playsound</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="script_background_music.vendor.playsound.PlaysoundException.html" class="internal-link" title="script_background_music.vendor.playsound.PlaysoundException"><wbr></wbr>Playsound<wbr></wbr>Exception</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        <div class="childrenKindTitle">Functions</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_play_sound" class="internal-link" title="script_background_music.vendor.playsound.get_play_sound">get<wbr></wbr>_play<wbr></wbr>_sound</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__canonicalize_path" class="internal-link" title="script_background_music.vendor.playsound.__canonicalize_path">__canonicalize<wbr></wbr>_path</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__playsound_nix" class="internal-link" title="script_background_music.vendor.playsound.__playsound_nix">__playsound<wbr></wbr>_nix</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__playsound_osx" class="internal-link" title="script_background_music.vendor.playsound.__playsound_osx">__playsound<wbr></wbr>_osx</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__playsound_win" class="internal-link" title="script_background_music.vendor.playsound.__playsound_win">__playsound<wbr></wbr>_win</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Variables</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#logger" class="internal-link" title="script_background_music.vendor.playsound.logger">logger</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Package</span>
+        <code><a href="script_background_music.vendor.html" class="internal-link" title="The parent of this package">vendor</a></code> 
+      </div>
+      
+      <div>
+        
+
+        <div class="childrenKindTitle">Modules</div>
+        <ul>
+    
+    <li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="script_background_music.vendor.playsound.html" class="internal-link" title="script_background_music.vendor.playsound">playsound</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+        
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        </div>
+        <div id="collapseSideBar">
+          <a class="btn btn-link" onclick="toggleSideBarCollapse()" title="Toggle Sidebar Collapse">
+          </a>
+        </div> 
+        <script src="sidebartoggle.js" type="text/javascript"></script>
+       
+      </div>
+
+      <div id="main" class="">
+        
+
+        
+
+        <div class="page-header">
+          <h1 class="package"><code><code><a href="index.html" class="internal-link">script_background_music</a></code><wbr></wbr>.<code><a href="script_background_music.vendor.html" class="internal-link" title="script_background_music.vendor">vendor</a></code><wbr></wbr>.<code><a href="script_background_music.vendor.playsound.html" class="internal-link" title="script_background_music.vendor.playsound">playsound</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          package documentation
+        </div>
+
+        <div class="extrasDocstring">
+          
+          <p></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>The MIT License (MIT)</p>
+<p>Copyright (c) 2021 Taylor Marks &lt;<a class="rst-external rst-reference" href="mailto:taylor@marksfam.com" target="_top">taylor@marksfam.com</a>&gt;</p>
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</p>
+</div>
+        </div>
+
+        <div id="splitTables">
+          
+          
+
+            <p class="fromInitPy">From <code>__init__.py</code>:</p><table class="children sortable" id="id8">
+  
+  
+  <tr class="exception">
+    
+    <td>Exception</td>
+    <td><code><a href="script_background_music.vendor.playsound.PlaysoundException.html" class="internal-link" title="script_background_music.vendor.playsound.PlaysoundException"><wbr></wbr>Playsound<wbr></wbr>Exception</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#get_play_sound" class="internal-link" title="script_background_music.vendor.playsound.get_play_sound">get<wbr></wbr>_play<wbr></wbr>_sound</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#logger" class="internal-link" title="script_background_music.vendor.playsound.logger">logger</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="function private">
+    
+    <td>Function</td>
+    <td><code><a href="#__canonicalize_path" class="internal-link" title="script_background_music.vendor.playsound.__canonicalize_path">__canonicalize<wbr></wbr>_path</a></code></td>
+    <td>Support passing in a pathlib.Path-like object by converting to str.</td>
+  </tr><tr class="function private">
+    
+    <td>Function</td>
+    <td><code><a href="#__playsound_nix" class="internal-link" title="script_background_music.vendor.playsound.__playsound_nix">__playsound<wbr></wbr>_nix</a></code></td>
+    <td>Play a sound using GStreamer.</td>
+  </tr><tr class="function private">
+    
+    <td>Function</td>
+    <td><code><a href="#__playsound_osx" class="internal-link" title="script_background_music.vendor.playsound.__playsound_osx">__playsound<wbr></wbr>_osx</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="function private">
+    
+    <td>Function</td>
+    <td><code><a href="#__playsound_win" class="internal-link" title="script_background_music.vendor.playsound.__playsound_win">__playsound<wbr></wbr>_win</a></code></td>
+    <td>Utilizes windll.winmm. Tested and known to work with MP3 and WAVE on Windows 7 with Python 2.7. Probably works with more file formats. Probably works on Windows XP thru Windows 10. Probably works with all versions of Python.</td>
+  </tr>
+</table>
+        </div>
+
+        <div id="childList">
+          <div class="basefunction">
+  
+  
+  <a name="script_background_music.vendor.playsound.get_play_sound">
+    
+  </a>
+  <a name="get_play_sound">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_play_sound</span><span class="function-signature">()</span>:
+    
+    <a class="headerLink" href="#get_play_sound" title="script_background_music.vendor.playsound.get_play_sound">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="script_background_music.vendor.playsound.logger">
+    
+  </a>
+  <a name="logger">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">logger</span> =
+    
+    <a class="headerLink" href="#logger" title="script_background_music.vendor.playsound.logger">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basefunction private">
+  
+  
+  <a name="script_background_music.vendor.playsound.__canonicalize_path">
+    
+  </a>
+  <a name="__canonicalize_path">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__canonicalize_path</span><span class="function-signature">(path)</span>:
+    
+    <a class="headerLink" href="#__canonicalize_path" title="script_background_music.vendor.playsound.__canonicalize_path">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Support passing in a pathlib.Path-like object by converting to str.</p></div>
+  </div>
+</div><div class="basefunction private">
+  
+  
+  <a name="script_background_music.vendor.playsound.__playsound_nix">
+    
+  </a>
+  <a name="__playsound_nix">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__playsound_nix</span><span class="function-signature">(sound, block=<a href="https://docs.python.org/3/library/constants.html#True" class="intersphinx-link">True</a>)</span>:
+    
+    <a class="headerLink" href="#__playsound_nix" title="script_background_music.vendor.playsound.__playsound_nix">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Play a sound using GStreamer.</p>
+<p>Inspired by this:
+<a class="rst-external rst-reference" href="https://gstreamer.freedesktop.org/documentation/tutorials/playback/playbin-usage.html" target="_top">https://gstreamer.freedesktop.org/documentation/tutorials/playback/playbin-usage.html</a></p>
+</div>
+  </div>
+</div><div class="basefunction private">
+  
+  
+  <a name="script_background_music.vendor.playsound.__playsound_osx">
+    
+  </a>
+  <a name="__playsound_osx">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__playsound_osx</span><span class="function-signature">(sound, block=<a href="https://docs.python.org/3/library/constants.html#True" class="intersphinx-link">True</a>)</span>:
+    
+    <a class="headerLink" href="#__playsound_osx" title="script_background_music.vendor.playsound.__playsound_osx">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basefunction private">
+  
+  
+  <a name="script_background_music.vendor.playsound.__playsound_win">
+    
+  </a>
+  <a name="__playsound_win">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__playsound_win</span><span class="function-signature">(sound, block=<a href="https://docs.python.org/3/library/constants.html#True" class="intersphinx-link">True</a>)</span>:
+    
+    <a class="headerLink" href="#__playsound_win" title="script_background_music.vendor.playsound.__playsound_win">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Utilizes windll.winmm. Tested and known to work with MP3 and WAVE on
+Windows 7 with Python 2.7. Probably works with more file formats.
+Probably works on Windows XP thru Windows 10. Probably works with all
+versions of Python.</p>
+<p>Inspired by (but not copied from) Michael Gundlach &lt;<a class="rst-external rst-reference" href="mailto:gundlach@gmail.com" target="_top">gundlach@gmail.com</a>&gt;'s mp3play:
+<a class="rst-external rst-reference" href="https://github.com/michaelgundlach/mp3play" target="_top">https://github.com/michaelgundlach/mp3play</a></p>
+<p>I never would have tried using windll.winmm without seeing his code.</p>
+</div>
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+
+  
+  <div class="container">
+    <a href="index.html">API Documentation</a> for <a href="https://github.com/timo-reymann/python-script-background-music" class="projecthome">script_background_music</a>,
+  generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+    24.3.3 at 2024-05-30 09:38:34.
+  </div>
+
+  <!-- Search related scripts needs to be loaded at the end of HTML 
+    parsing not to introduce overhead and display HTML data asap -->
+  <script src="ajax.js" type="text/javascript"></script>
+  <script src="searchlib.js" type="text/javascript"></script>
+  <script src="search.js" type="text/javascript"></script>
+
+</footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>
