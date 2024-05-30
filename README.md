@@ -10,7 +10,7 @@ script-background-music
 [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=timo-reymann_python-script-background-music&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=timo-reymann_python-script-background-music)
 
 <p align="center">
-    <img width="300" src=".github/images/elevator.png">
+    <img width="300" src="https://raw.githubusercontent.com/timo-reymann/python-script-background-music/main/.github/images/elevator.png">
     <br />
     <b>script-background-music</b> - Play elevator music in the background while your script runs.
 </p>
