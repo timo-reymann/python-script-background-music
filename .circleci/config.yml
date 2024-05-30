@@ -37,11 +37,11 @@ jobs:
       - run:
           name: Install dependencies
           command: |
-            pip3 install -r requirements-dev.txt
+            pip3 install .[dev]
       - run:
           name: Build package
           command: |
-            python3 setup.py sdist bdist_wheel
+            python3 -m build
       - run:
           name: Upload package
           command: |
@@ -58,7 +58,7 @@ jobs:
       - run:
           name: Install dependencies
           command: |
-            pip3 install -r requirements-dev.txt
+            pip3 install .[dev]
       - run:
           name: Build html documentation
           command: |
