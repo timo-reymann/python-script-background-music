@@ -44,13 +44,9 @@ intersphinx = ["https://docs.python.org/3/objects.inv"]
 docformat = "restructuredtext"
 html-output = "gh-pages"
 
-add-package = ["oauth2_cli_auth"]
-project-name = "oauth2_cli_auth"
-project-url = "https://github.com/timo-reymann/python-oauth2-cli-auth"
-privacy = [
-    "HIDDEN:oauth2_cli_auth.*_test",
-    "HIDDEN:oauth2_cli_auth.conftest"
-]
+add-package = ["script_background_music"]
+project-name = "script_background_music"
+project-url = "https://github.com/timo-reymann/python-script-background-music"
 
 theme = "base"
 template-dir = "pydoctor-theme"
