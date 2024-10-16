@@ -10,7 +10,7 @@ executors:
       - image: cimg/python:3.12.7
   node:
     docker:
-      - image: cimg/python:3.12-node
+      - image: cimg/python:3.13-node
 
 jobs:
   pip-publish:
