@@ -1,3 +1,10 @@
+## [1.5.2](https://github.com/timo-reymann/python-script-background-music/compare/1.5.1...1.5.2) (2024-11-30)
+
+
+### Bug Fixes
+
+* **deps:** update dependency twine to v6 ([acd3304](https://github.com/timo-reymann/python-script-background-music/commit/acd33044a852ed5ceed6561bee73a97fcf285a0f))
+
 ## [1.5.1](https://github.com/timo-reymann/python-script-background-music/compare/1.5.0...1.5.1) (2024-11-08)
 
 
