@@ -1,3 +1,10 @@
+## [1.5.3](https://github.com/timo-reymann/python-script-background-music/compare/1.5.2...1.5.3) (2024-12-02)
+
+
+### Bug Fixes
+
+* **deps:** update dependency pydoctor to ==24.11.* ([8a4cc7f](https://github.com/timo-reymann/python-script-background-music/commit/8a4cc7f5897dc9dbd0fe535471db5c948409e80a))
+
 ## [1.5.2](https://github.com/timo-reymann/python-script-background-music/compare/1.5.1...1.5.2) (2024-11-30)
 
 
