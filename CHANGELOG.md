@@ -1,3 +1,10 @@
+## [1.5.5](https://github.com/timo-reymann/python-script-background-music/compare/1.5.4...1.5.5) (2025-03-09)
+
+
+### Bug Fixes
+
+* **deps:** update dependency setuptools to v76 ([c619954](https://github.com/timo-reymann/python-script-background-music/commit/c61995436305359947b4c240bd8bce3a6ebb3934))
+
 ## [1.5.4](https://github.com/timo-reymann/python-script-background-music/compare/1.5.3...1.5.4) (2025-01-22)
 
 
