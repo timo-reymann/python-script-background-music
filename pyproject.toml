@@ -28,7 +28,7 @@ Homepage = "https://github.com/timo-reymann/python-script-background-music"
 dev = [
     "setuptools==80.*",
     "setuptools-scm==9.*",
-    "twine==6.1.*",
+    "twine==6.2.*",
     "wheel==0.45.*",
     "pydoctor==25.4.*",
     "build==1.*"
