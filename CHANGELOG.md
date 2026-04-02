@@ -1,3 +1,9 @@
+## [1.5.12](https://github.com/timo-reymann/python-script-background-music/compare/1.5.11...1.5.12) (2026-04-02)
+
+### Bug Fixes
+
+* **deps:** update dependency setuptools-scm to v10 ([f608b72](https://github.com/timo-reymann/python-script-background-music/commit/f608b72b27e7815089f15f4cd8bcafeb22a08101))
+
 ## [1.5.11](https://github.com/timo-reymann/python-script-background-music/compare/1.5.10...1.5.11) (2026-03-14)
 
 ### Bug Fixes
