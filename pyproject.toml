@@ -26,7 +26,7 @@ Homepage = "https://github.com/timo-reymann/python-script-background-music"
 
 [project.optional-dependencies]
 dev = [
-    "setuptools==82.*",
+    "setuptools==83.*",
     "setuptools-scm==10.*",
     "twine==6.2.*",
     "wheel==0.47.*",
