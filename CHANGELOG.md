@@ -1,3 +1,9 @@
+## [1.5.17](https://github.com/timo-reymann/python-script-background-music/compare/1.5.16...1.5.17) (2026-08-19)
+
+### Bug Fixes
+
+* **deps:** update dependency wheel to ==0.48.* ([8c57a6e](https://github.com/timo-reymann/python-script-background-music/commit/8c57a6eb58d50431d56cf047ca14ee228e1e100b))
+
 ## [1.5.16](https://github.com/timo-reymann/python-script-background-music/compare/1.5.15...1.5.16) (2026-08-17)
 
 ### Bug Fixes
